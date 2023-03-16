@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <a class="header__logo" href="#">
+                    <img src="images/header/logo.png" alt="logo">
+                </a>
+                
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a href="tel:+380999999999" class="header__phone">(099) 999-99-99</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Про компанію</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Чому ми?</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Робота в компанії</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Контакти</a>
+                    </li>
+                </ul>
+                <button class="header__menu-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="#" class="header__btn">Асортимент</a>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+        <main class="main">
+            <section class="promo">
+                <div class="container">
+                    <div class="promo__inner">
+                        <h1 class="promo__title">Пекарня</h1>
+                        <h2 class="promo__subtitle">чудових ідей!</h2>
+                        <p class="promo__text">Найсвіжіша випічка власного виробництва на будь-який смак. 
+                            Також у нас можна замовити домашні вареники, пельмені, короваї, листове тісто і багато іншого.</p>
+                        <a class="promo__btn" href="#">Хочу спробувати!</a>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="container">
+                    <div class="about__inner">
+                        <div class="about__info">
+                            <h3 class="about__info-title">Про нашу пекарню</h3>
+                            <p class="about__info-text">Наша пекарня це мережа, яка завойовує серця любителів теплої оригінальної випічки.</p>
+                            <p class="about__info-text">Ми готуємо кожен день, не залишаючи нічого на завтра. Все що ви бачите на прилавку - приготовленно вранці.
+                            </p>
+                            <p class="about__info-text">Ми не економимо на продуктах і кадрах. Ми любимо своїх гостей. Ми знаємо що таке смачна випічка.
+                                Ми даруємо вас своє тепло кожен день.</p>
+                        </div>
+                        <div class="about__gallery">
+                            <div class="about__gallery-item"><img src="images/about/1.jpg" alt="img"></div>
+                            <div class="about__gallery-item"><img src="images/about/2.jpg" alt="img"></div>
+                            <div class="about__gallery-item"><img src="images/about/3.jpg" alt="img"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog">
+                <div class="container">
+                    <div class="catalog__inner">
+                        <h2 class="catalog__title">Асортимент</h2>
+                        <div class="catalog__buttons">
+                            <button class="catalog__btn" type="button" data-filter=".all">Весь асортимент</button>
+                            <button class="catalog__btn" type="button" data-filter=".category-1">Випічка</button>
+                            <button class="catalog__btn" type="button" data-filter=".category-2">Пельмені</button>
+                            <button class="catalog__btn" type="button" data-filter=".category-3">Вареники</button>
+                            <button class="catalog__btn" type="button" data-filter=".category-4">Тісто</button>
+                        </div>
+                        <div class="catalogs">
+                            <div class="mix all catalog__items">
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/1.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Вареники з картоплею</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/2.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Пельмені з яловичиною</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/3.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Пельмені зі свининою</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/4.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Печиво</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/5.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Круасан з малиновим джемом</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/6.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Пончики</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                            </div>
+                            <div class="mix category-1 catalog__items">
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/4.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Печиво</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/5.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Круасан з малиновим джемом</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/6.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Пончики</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/4.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Печиво</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/5.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Круасан з малиновим джемом</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/6.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Пончики</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                            </div>
+                            <div class="mix category-2 catalog__items">
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/2.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Пельмені з яловичиною</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/3.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Пельмені зі свининою</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/2.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Пельмені з яловичиною</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/3.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Пельмені зі свининою</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/2.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Пельмені з яловичиною</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/3.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Пельмені зі свининою</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                            </div>
+                            <div class="mix category-3 catalog__items">
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/1.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Вареники з картоплею</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/1.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Вареники з картоплею</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/1.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Вареники з картоплею</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/1.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Вареники з картоплею</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/1.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Вареники з картоплею</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/1.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Вареники з картоплею</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                            </div>
+                            <div class="mix category-4 catalog__items">
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/5.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Круасан з малиновим джемом</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/6.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Пончики</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/5.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Круасан з малиновим джемом</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/6.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Пончики</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/5.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Круасан з малиновим джемом</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <a class="catalog__item-link" href="#">
+                                        <img class="catalog__item-img" src="images/catalog/6.jpg" alt="img">
+                                    </a>
+                                    <p class="catalog__item-title">Пончики</p>
+                                    <p class="catalog__item-price">40 грн/кг</p>
+                                    <button class="catalog__item-btn">Замовити</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="job">
+                <div class="container">
+                    <div class="job__inner">
+                        <div class="job__bg">
+                            <img src="images/job/img.jpg" alt="img">
+                        </div>
+                        <div class="job__info">
+                            <h2 class="job__info-title">Робота в компанії</h2>
+                            <p class="job__info-text">У нашій пекарні працюються найкращі пекарі України, які люблять свою справу та до випікання випічки підходять з творчим підходом.</p>
+                            <p class="job__info-text">Щодня наші бейкери прокидаються о 5 годині ранку, щоб на сніданок ви завжди снідали свіжою та запашною випічкою.</p>
+                            <p class="job__info-subtitle">Завжди потрібні:</p>
+                            <p class="job__info-text">Пекарі, кондитери та кур’єри.</p>
+                            <p class="job__info-text">Надсилайте резюме і отримайте роботу вашої мрії!</p>
+                            <a class="job__info-btn" href="#">Надіслати резюме</a>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <section class="qualities">
+                <div class="container">
+                    <h2 class="qualities__title">Чому наша мережа?</h2>
+                    <div class="qualities__box">
+                        <div class="qualities__item">
+                            <img class="qualities__item-img" src="images/qualities/1.jpg" alt="img">
+                            <h4 class="qualities__item-title">Професіонали</h4>
+                            <p class="qualities__item-text">Ми за якісні кадри и поважаемо працю наших працівників. Вони стараються над вашою випічкою. А ми стараємся спростити їм цю задачу.</p>
+                        </div>
+                        <div class="qualities__item">
+                            <img class="qualities__item-img" src="images/qualities/2.jpg" alt="img">
+                            <h4 class="qualities__item-title">Якість</h4>
+                            <p class="qualities__item-text">Це найважливіше в нашій роботі. Тільки з якісних продуктів можуть вийти такі шедеври, якими ми полюбляємо частувати вас.</p>
+                        </div>
+                        <div class="qualities__item">
+                            <img class="qualities__item-img" src="images/qualities/3.jpg" alt="img">
+                            <h4 class="qualities__item-title">Навчання</h4>
+                            <p class="qualities__item-text">Наші робітники постійно навчаються і розвиваються. Що дозволяє нам дивувати вас новинках кожен місяць.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="order">
+                <div class="container">
+                    <div class="order__inner">
+                        <h2 class="order__title">Замовляй прямо зараз!</h2>
+                        <p class="order__text">Ми зателефонуємо вам для уточнення замовлення і ваших побажань.</p>
+                        <p class="order__text">Разом з вами втілимо будь-які ваші задумки у випічці. Ви порадуєте себе або своїх гостей, а ми будемо щасливі розділити з вами дану мить.</p>
+                        <p class="order__text">Доставка проводиться через самовивіз, <span>Glovo</span> та <span>Raketa</span>.</p>
+                        <form class="order__form">
+                            <label class="order__label label-1" for="name">Ваше ім’я*</label>
+                            <input class="order__input" type="text" id="name">
+                            <label class="order__label label-2" for="phone">Номер телефону*</label>
+                            <input class="order__input" type="tel">
+                            <button class="order__btn" type="submit" id="phone">Надіслати</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10422.919227220782!2d28.39484202709614!3d49.22465105926914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5c431a30f875%3A0x8eb64e1c809eadd7!2sTeremok!5e0!3m2!1sru!2sua!4v1678786252701!5m2!1sru!2sua" height="566" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="footer__inner">
+                <a class="footer__logo" href="#"><img class="footer__img" src="images/footer/logo.png" alt="logo" ></a>
+                <div class="footer__box">
+                    <nav class="footer__menu">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">– Про компанію</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">– Чому ми?</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">– Доставка</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">– Робота в компанії</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__info">
+                        <div class="footer__location">
+                            <img class="footer__location-icon"src="images/footer/icon-1.svg" alt="icon" >
+                            <p class="footer__location-text">м. Вінниця</p>
+                        </div>
+                        <div class="footer__date">
+                            <img class="footer__date-icon" src="images/footer/icon-2.svg" alt="icon">
+                            <div class="footer__date-box">
+                                <p class="footer__date-text">Пн - Пт. 09:00 - 21:00</p>
+                                <p class="footer__date-text">Сб - Нд. 10:00 - 22:00</p>
+                            </div>
+                        </div>
+                        <div class="footer__phone">
+                            <img class="footer__phone-icon" src="images/footer/icon-3.svg" alt="icon">
+                            <div class="footer__phone-box">
+                                <p class="footer__phone-text">(099) 999-99-99</p>
+                                <p class="footer__phone-text">(096) 999-99-99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer__copy">© Працюємо з 2021 року</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>
